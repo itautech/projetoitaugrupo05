@@ -1,0 +1,41 @@
+#imgperfil    {
+    border-radius: 50%;
+    width: 10%;
+    padding: 1%;
+}
+
+.imgperfil
+{
+        opacity:0.5;
+
+}
+
+.imgperfil:hover
+{
+    opacity:1;
+}
+
+.perfilpessoal{
+	border: black 1px solid;
+	width: 100%
+	padding: 1%;
+	margin: 2%;
+}
+
+.perfilpessoal:hover {
+  padding: 2%;
+  
+}
+
+.perfilpessoal .conteudoperfil{
+	display: inline-block;
+}
+
+#textoperfil{
+	text-align: justify;
+	width: 80%
+}
+
+a{ 
+ text-decoration:none; 
+} 

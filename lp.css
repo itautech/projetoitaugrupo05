@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Saira Extra Condensed', sans-serif;
+    
+}
+html,body{
+    height: 100%;
+}
+.parent{
+    display: flex;
+}
+.sidebar{
+    width: 17%;
+    height: 100%;
+    position: fixed;
+    background-color: blueviolet;
+}
+.sidebar-pos{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.img-sidebar{
+    position: relative;
+    text-align: center;
+    padding: 5%;
+}
+.img-sidebar img{
+    width: 100%;
+}
+.menu{
+    position: relative;
+    margin: 50px 0;
+    text-align: center;
+}
+.menu a{
+    position: relative;
+    color: white;
+    opacity: 0.4;
+    font-size: 25px;
+    display: block;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+.menu a.selected{
+    opacity: 1;
+}
+.content{
+    position: absolute;
+    text-align: justify;
+    left: 17%;
+    width: 83%;
+    height: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgb(231, 215, 231);
+    overflow:auto;
+    padding: 0 3%;
+}
+section,decricao{
+    position: relative;
+}
+section.descricao h2 > span{
+    color: rgb(47, 3, 70);
+    font-size: 80px;
+    animation-name: mudacor;
+    animation-duration: 5s;
+}
+@keyframes mudacor {
+    from {color: rgb(33, 146, 23)}
+    to {color: rgb(47, 3, 70)}
+}
+section.descricao h3 > span{
+    margin-top: 25px 0;
+    line-height: 60px;
+    color: rgb(47, 3, 70);
+    font-size: 35px;
+}
+section.descricao p > span{
+    color: rgb(22, 12, 31);
+    line-height: 30px;
+    font-size: 20px;
+    margin-top:40px;
+}
+#video{
+    padding: 10px;
+    line-height: 60px;
+}
+#video2{
+    padding: 10px;
+}
+section.descricao h4 > span{
+    line-height: 40px;
+    color: rgb(47, 3, 70);
+    font-size: 30px;
+    margin-bottom: 30%;
+}
+section.descricao u > span{
+    margin-top: 25px 0;
+    color: rgb(47, 3, 70);
+    font-size: 35px;
+}
+
+/*CSS parte sobre*/
