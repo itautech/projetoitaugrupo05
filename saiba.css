@@ -12,7 +12,25 @@ html,body{
 .parent{
     display: flex;
 }
+h2 {
+    
+    font-size: max(28px, 2.82vw) ;
+}
 
+h3 {
+    
+    font-size: max(21px, 1.9vw) ;
+}
+
+h4 {
+    
+    font-size: max(18px, 1.53vw) ;
+}
+
+p {
+    
+    font-size: max(14px, 1.02vw) ;
+}
 .sidebar{
     width: 17%;
     height: 100%;
@@ -67,7 +85,6 @@ html,body{
 
 section.descricao h2 > span{
     color: rgb(119, 18, 170);
-    font-size: 55px;
     margin-bottom: 30%;
     margin-top: 10%;
     text-align: center;  
@@ -110,7 +127,7 @@ section.descricao h2 > span{
 
 h2{
     text-align: center; 
-    font-size: 55px; 
+    
     color: rgb(111, 18, 161);
     margin-top: 5%; 
     border-right: 2px solid rgb(47, 3, 70);   

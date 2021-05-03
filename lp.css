@@ -8,6 +8,27 @@
 html,body{
     height: 100%;
 }
+
+h2 {
+    
+    font-size: max(50px, 4.1vw) ;
+}
+
+h3 {
+    
+    font-size: max(21px, 1.9vw) ;
+}
+
+h4 {
+    
+    font-size: max(18px, 1.53vw) ;
+}
+
+p {
+    
+    font-size: max(14px, 1.02vw) ;
+}
+
 .parent{
     display: flex;
 }
@@ -64,7 +85,6 @@ section,decricao{
 }
 section.descricao h2 > span{
     color: rgb(47, 3, 70);
-    font-size: 80px;
     animation-name: mudacor;
     animation-duration: 5s;
 }
@@ -76,12 +96,11 @@ section.descricao h3 > span{
     margin-top: 25px 0;
     line-height: 60px;
     color: rgb(47, 3, 70);
-    font-size: 35px;
-}
+    }
 section.descricao p > span{
     color: rgb(22, 12, 31);
     line-height: 30px;
-    font-size: 20px;
+    
     margin-top:40px;
 }
 #video{
@@ -94,7 +113,7 @@ section.descricao p > span{
 section.descricao h4 > span{
     line-height: 40px;
     color: rgb(47, 3, 70);
-    font-size: 30px;
+   
     margin-bottom: 30%;
 }
 section.descricao u > span{
@@ -102,5 +121,7 @@ section.descricao u > span{
     color: rgb(47, 3, 70);
     font-size: 35px;
 }
-
+.imgperfil {
+    width: max(50px, 4vw);
+}
 /*CSS parte sobre*/
