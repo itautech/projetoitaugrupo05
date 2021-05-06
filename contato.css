@@ -1,12 +1,49 @@
-﻿.form {
+﻿#form {
 	display:grid;
-	grid-template-columns:1fr 3fr;
+	grid-template-columns:1fr;
 	grid-row-gap:0.5em;
 }
+
+@media (min-width:400px) {
+	#form {
+		grid-template-columns:1fr 3fr;
+	}
+}
+
+#form-container {
+	padding-top: 5em;
+}
+
+@media (min-width:800px) {
+	#form-container {
+		max-width: 800px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+#field_content {
+	height:10em;
+}
+
 select, input {
 	height:2em;
 }
-input, select, textarea {
+
+input, select, textarea, bottom {
 	border:0;
 	border-radius:0.5em;
+	padding:0.5em;
+}
+
+select {
+	padding: 0;
+}
+
+#form-display-name,
+#form-display-to,
+#form-display-error,
+#form-display-label {
+   line-height: inherit;
+   margin-top: inherit;
 }
