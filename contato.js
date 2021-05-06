@@ -17,11 +17,44 @@ function checarCampos() {
 	return true;
 }
 
+function capturarCampos(){
+	const fields = ["field_to", "field_name", "field_phone", "field_email", "field_subject", "field_content"];
+var message = {};
+
+	for(let index in fields) {
+		let id = fields[index];
+		let field = document.getElementById(id);
+		message[id] = formatarCampoParaTransporte(field.value);
+	}
+	return message;
+}
+
+function formatarCampoParaTransporte(input){
+	var buffer = '';
+	for (let i = 0; i < input.length; i++){
+		if(input.charAt(i) == '\\')
+			buffer += "#b";
+		else if(input.charAt(i) == '"')
+			buffer += "#q";
+		else if(input.charAt(i) == '#')
+			buffer += "#c";
+		else if(input.charAt(i) == "\n")
+			buffer += "#n";
+		else if(input.charAt(i) == "\r")
+			null;
+		else
+			buffer += input.charAt(i);
+	}
+	return buffer;
+}
+
 function enviar() {
 	if(!checarCampos())
 		return;
-	
+
+	const message = capturarCampos();
 	const url = 'https://itau05.ecolabore.net/-endpoints/angelo-mailer';
+
 	const request = new XMLHttpRequest();
 	request.onreadystatechange = function() {
 		if (this.readyState != 4 || this.status != 200) 
@@ -38,8 +71,8 @@ function enviar() {
 		else
 			document.getElementById("form-msg-fail").hidden = false;
 	};
-	request.open("GET", url, true);
-	request.send();
+	request.open("POST", url, true);
+	request.send(JSON.stringify (message));
 }
 
 function retornar() {
