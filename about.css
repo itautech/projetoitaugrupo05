@@ -1,7 +1,15 @@
 #imgperfil    {
     border-radius: 50%;
-    width: 10%;
+    width: 100px;
     padding: 1%;
+}
+
+.iconlinkedin{
+	width: 20px;
+}
+
+.icongithub{
+	width: 20px;
 }
 
 .imgperfil
@@ -42,3 +50,9 @@ border: black 1px solid;
 a{ 
  text-decoration:none; 
 } 
+
+
+
+
+
+
