@@ -1,1 +1,12 @@
-﻿
+﻿.form {
+	display:grid;
+	grid-template-columns:1fr 3fr;
+	grid-row-gap:0.5em;
+}
+select, input {
+	height:2em;
+}
+input, select, textarea {
+	border:0;
+	border-radius:0.5em;
+}
