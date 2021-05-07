@@ -110,6 +110,9 @@ section.descricao p > span{
 #video2{
     padding: 10px;
 }
+#video3{
+    padding: 10px;
+}
 section.descricao h4 > span{
     line-height: 40px;
     color: rgb(47, 3, 70);
