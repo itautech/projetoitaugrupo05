@@ -124,4 +124,23 @@ section.descricao u > span{
 .imgperfil {
     width: max(50px, 4vw);
 }
-/*CSS parte sobre*/
+
+footer {
+    display: flex;
+    position: absolute;
+    margin: auto;
+    text-align: center;
+    font-size: 10px; 
+    margin-bottom: 30px;
+    
+}
+
+.footer-row-1{
+    font-size: 15px;
+    background-color:blueviolet;
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid;  
+
+}
+
