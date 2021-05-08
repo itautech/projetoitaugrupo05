@@ -4,6 +4,14 @@
     padding: 1%;
 }
 
+.iconlinkedin{
+	width: 20px;
+}
+
+.icongithub{
+	width: 20px;
+}
+
 .imgperfil
 {
         opacity:0.5;
@@ -14,17 +22,20 @@
 {
     opacity:1;
 }
-
+/*
+border: black 1px solid;
+*/
 .perfilpessoal{
-	border: black 1px solid;
-	width: 100%
+	background: rgb(231, 215, 231);
+	width: 90%;
 	padding: 1%;
 	margin: 2%;
 }
 
 .perfilpessoal:hover {
   padding: 2%;
-  
+  background: #ECCAE5;
+  margin: 1%;
 }
 
 .perfilpessoal .conteudoperfil{
@@ -39,3 +50,9 @@
 a{ 
  text-decoration:none; 
 } 
+
+
+
+
+
+
