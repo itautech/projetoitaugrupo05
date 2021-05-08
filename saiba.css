@@ -12,7 +12,25 @@ html,body{
 .parent{
     display: flex;
 }
+h2 {
+    
+    font-size: max(28px, 2.82vw) ;
+}
 
+h3 {
+    
+    font-size: max(21px, 1.9vw) ;
+}
+
+h4 {
+    
+    font-size: max(18px, 1.53vw) ;
+}
+
+p {
+    
+    font-size: max(14px, 1.02vw) ;
+}
 .sidebar{
     width: 17%;
     height: 100%;
@@ -37,6 +55,7 @@ html,body{
     margin: 50px 0;
     text-align: center;
 }
+
 .menu a{
     position: relative;
     color: white;
@@ -59,49 +78,68 @@ html,body{
     background:rgb(231, 215, 231);
     overflow:auto;
     padding: 0 3%;
-}
 
 }
+
+/* Saiba mais CSS */
+
 section.descricao h2 > span{
-    color: rgb(47, 3, 70);
-    font-size: 30px;
+    color: rgb(119, 18, 170);
     margin-bottom: 30%;
     margin-top: 10%;
+    text-align: center;  
+     
 }
+
 /* Saiba mais CSS */
+
 #saibaMais{
     font-family:  'Saira Extra Condensed', sans-serif;
     display: flex;
     justify-content:center;  
     text-shadow: gray 50px 165px 50px;
     margin-top: 20px;
+     
 }
 
-
-.img-noticia{
-    position:relative;
-    text-align:center;
-    padding: 10%;
-    width: 50%;
-    margin-left: 20%;
-    margin-bottom: 10px;/
-    margin-right: 20;
-    
+#news01{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    width: auto;
 }
-#noticias01{
-    display: flex;
-    justify-content:space-between;
-    margin-top: 10%;
+
+.imagemNoticia{
+    box-shadow: gray 3px 3px 6px;
+    justify-content: space-between;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    padding-top: 20px;
+    padding-right: 10px;
+    padding-left: 20px;
 }
 
 h2{
     text-align: center; 
-    font-size: 55px; 
+    
+    color: rgb(111, 18, 161);
     margin-top: 5%; 
-    border-right: 2px solid rgba(24, 23, 23, 0.75);
+    border-right: 2px solid rgb(47, 3, 70);   
+}
+
+h4{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
     
 }
-/*piscar cursor*/
+/*Piscar cursor e escrevar Saiba mais como se estivesse digitando*/
 
 .typing-animation{
     animation: blinkCursor 500ms infinite normal, typing 4s steps(40) 1s normal;
@@ -118,19 +156,32 @@ h2{
 
 @keyframes blinkCursor{
     from{
-        border-right-color: rgba(24, 23, 23, 0.75);
+        border-right-color: rgb(47, 3, 70);
     }
     to{
         border-right-color: transparent;
     }
 }
 .line{
-    border-right:2px solid, rgba(255, 255, 255, 0.75);
+    border-right:2px solid, rgb(47, 3, 70);
     margin-top: 20px;
     white-space: nowrap;
     overflow: hidden;
 }
 
-/*piscar cursor*/
+/*Piscar cursor e escrevar Saiba mais como se estivesse digitando*/
 
-/*CSS parte sobre 
+#buttonstyle{
+    background: rgb(47, 3, 70);
+    border-radius: 6px;
+    padding: 15px;
+    cursor: pointer;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+

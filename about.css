@@ -1,6 +1,6 @@
 #imgperfil    {
     border-radius: 50%;
-    width: 100px;
+    width: max(80px, 7.2vw);
     padding: 1%;
 }
 

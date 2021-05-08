@@ -1,6 +1,6 @@
 ﻿<html>
     <head>
-        <title>6 Boas notícias sobre COVID-19</title>
+        <title>Contato</title>
         <meta charset="utf-8">
         <link rel="stylesheet" href="lp.css">
         <link rel="stylesheet" href="contato.css">
@@ -32,40 +32,85 @@
 
             <div class="content">
                 <section class="descricao">
-                    <h2><span>Contato</span></h2>                    
+                    <h2 class="line typing-animation"><span>Contato</span></h2>                    
 <!--
                     <h3><span>Texto de descrição sobre o covid 19</span></h3>
                     <p><span>Texto longo que tenho um breve resumo sobre a pandemia e algun aspactos positivos que ela trouxe para nós</span></p>
     -->                
 
+<!-- Caixa externa do formulário -->
+<div id="form-container">
 
 <!-- Formulario -->
-<form>
+<div id="form">
 
-<label for="msg_to">Para</label>
-<select id="msg_for">
-<option value="angelobeck@floripa.com.br">Ângelo Beck (Back-end)</option>
-<option value="assenavsp@hotmail.com">Vanessa (Design)</option>
-<option value="jhonyfczuim@gmail.com">Jhony Zuim (Back-end)</option>
+<label for="field_to">Para</label>
+<select id="field_to">
+<option value="angelo">Ângelo Beck</option>
+<option value="daniel">Daniel Ferreira de Souza Gomes</option>
+<option value="eduardo">Eduardo Silva Rocha</option>
+<option value="jhony">Jhony Ferreira Cruz Zuim</option>
+<option value="leandro">Leandro Silva Araujo</option>
+<option value="leticia">Letícia dos Santos Silva</option>
+<option value="luan">Luan Felipe da Cruz Brito</option>
+<option value="paulo">Paulo Ricardo Barbosa de Souza</option>
+<option value="rafaela">Rafaela Souza Plachta</option>
+<option value="vanessa">Vanessa Gomes de Oliveira</option>
 </select>
 
-<label for="msg_name">Nome</label>
-<input type="text" id="msg_name">
+<label for="field_name">Nome</label>
+<input type="text" id="field_name">
 
-<label for="msg_subject">Assunto</label>
-<input type="text" id="msg_subject">
+<label for="field_email">E-mail</label>
+<input type="mail" id="field_email">
 
-<label for="msg_email">E-mail</label>
-<input type="mail" id="msg_email">
+<label for="field_phone">Telefone</label>
+<input type="tel" id="field_phone">
 
-<label for="msg_content">Mensagem</label>
-<textarea id="msg_content"></textarea> 
+<label for="field_subject">Assunto</label>
+<input type="text" id="field_subject">
+
+<label for="field_content">Mensagem</label>
+<textarea id="field_content"></textarea> 
 
 <div></div>
-<button>Enviar</button>
-
-</form>
+<button onclick="enviar()">Enviar</button>
+	
+</div>
 <!-- fim do formulario -->
+
+<!-- Mensagem de sucesso -->
+<div id="form-msg-ok" hidden>
+<h3>Sucesso</h3>
+<p>Olá <span id="form-display-name"></span>,</p>
+<p>Sua mensagem para <span id="form-display-to"></span> foi enviada com sucesso.</p>
+<p>Desde já agradecemos seu contato</p>
+<button onclick="retornar()">Retornar ao formulário</button>
+</div>
+<!-- fim da mensagem de sucesso -->
+
+<!-- mensagem de falha -->
+<span id="form-msg-fail" hidden>
+<h3>Ocorreu uma falha</h3>
+<p>Olá visitante,</p>
+<p>Ocorreu uma falha ao enviar sua mensagem.</p>
+<p>O servidor retornou um erro "<span id="form-display-error"></span>"</p>
+<p>Solicitamos que tente novamente em alguns instantes.</p>
+<p>Desculpa-nos o inconveniente.</p>
+<button onclick="retornar()">Retornar ao formulário</button>
+</div>
+<!-- fim da mensagem de falha -->
+
+<!-- mensagem campo obrigatório -->
+<div id="form-msg-required-field" hidden>
+<h3>Campo de preenchimento obrigatório</h3>
+<p>O campo "<span id="form-display-label"></span>" é de preenchimento obrigatório.</p>
+<button onclick="corrigir()">Corrigir</button>
+</div>
+<!-- fim da mensagem campo obrigatório -->
+
+</div>
+<!-- fim da caixa externa do formulário -->
 
                 </section>
                                     
@@ -74,7 +119,8 @@
             </div>
 
         </div><!--parent-->
-        
+
+        <script src="contato.js"></script>
     </body>
 
 </html>
