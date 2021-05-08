@@ -8,7 +8,7 @@ Repositório para desenvolvimento do desafio do grupo 05 do treinamento Itaú, e
 * Ângelo Beck
 * Daniel Ferreira
 * Eduardo Silva Rocha
-* Jhony Ferreira Cruz Zuim
+* Jhony Ferreira Cruz Zuim é um cara legal
 * Leandro Silva Araujo
 * Letícia dos Santos Silva
 * Luan Felipe da Cruz Brito
