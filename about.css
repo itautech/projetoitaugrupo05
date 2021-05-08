@@ -30,6 +30,7 @@ border: black 1px solid;
 	width: 90%;
 	padding: 1%;
 	margin: 2%;
+	min-width: 250px;
 }
 
 .perfilpessoal:hover {
@@ -44,9 +45,11 @@ border: black 1px solid;
 
 #textoperfil{
 	text-align: justify;
-	width: 80%
+	width: 80%;
+	}
+#textoperfil span{
+	text-decoration: underline;
 }
-
 a{ 
  text-decoration:none; 
 } 
