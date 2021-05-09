@@ -5,19 +5,19 @@ Repositório para desenvolvimento do desafio do grupo 05 do treinamento Itaú, e
 
 ## Integrantes: 
 
-* Ângelo Beck
-* Daniel Ferreira
-* Eduardo Silva Rocha
-* Jhony Ferreira Cruz Zuim
-* Leandro Silva Araujo
-* Letícia dos Santos Silva
-* Luan Felipe da Cruz Brito
-* Paulo Ricardo Barbosa de Souza
-* Rafaela Souza Plachta
-* Vanessa Gomes de Oliveira
+* Ângelo Beck - Desenvolvedor pagina Contato
+* Daniel Ferreira - Desenvolvedor da Home
+* Eduardo Silva Rocha - Desenvolvedor de otimização de codigos (HTML e CSS)
+* Jhony Ferreira Cruz Zuim - - Desenvolvedor da Home
+* Leandro Silva Araujo - Desenvolvedor da pagina Sobre
+* Letícia dos Santos Silva - Desenvolvedor da pagina Sobre
+* Luan Felipe da Cruz Brito - Desenvolvedor da pagina Saiba Mais
+* Paulo Ricardo Barbosa de Souza Desenvolvedor da pagina Saiba Mais
+* Rafaela Souza Plachta - - Desenvolvedor da Home
+* Vanessa Gomes de Oliveira - Desenvolvedor pagina contato
 
-## Considerações sobre segurança
-
+## Considerações sobre segurança 
+- By Ângelo Beck
 Quando publicamos conteúdos na Internet, precisamos estar atentos aos ataques. Embora pareça estranho preocupar-se com uma simples publicação de textos, um único email inserido no conteúdo pode ser alvo para spammers.
 
 Mais cuidado ainda quando desenvolvemos ferramentas interativas, onde os "bots" tentarão submeter formulários ou mesmo hackers poderão tentar enviar mensagens indesejadas através de possíveis brechas na segurança.
