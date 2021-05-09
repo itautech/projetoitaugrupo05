@@ -1,5 +1,6 @@
 /* Leandro escreveu e desenhou os efeitos de CSS base*/
 /* Leticia colaborou em codigos de CSS da pagina sobre*/
+/* Eduardo tambem ajudou com efeitos e aproveitando melhor os icones de redes sociais */
 #imgperfil    {
     border-radius: 50%;
     width: max(80px, 7.2vw);
@@ -36,9 +37,9 @@ border: black 1px solid;
 }
 
 .perfilpessoal:hover {
-  padding: 2%;
-  background: #ECCAE5;
-  margin: 1%;
+	padding: 2%;
+	background: #ECCAE5;
+	margin: 1%;
 }
 
 .perfilpessoal .conteudoperfil{
@@ -50,17 +51,19 @@ border: black 1px solid;
 	width: 80%;
 	}
 #textoperfil span{
-	text-decoration: solid;
+	color: rgb(47, 3, 70);
+    animation-name: mudacor;
+    animation-duration: 5s;
 }
+
 a{ 
- text-decoration:none; 
+	text-decoration:none; 
 } 
 
 /* Adicionado pela Leticia para deixar a pagina responsiva*/
 @media only screen and (max-width: 700px) {
  	.perfilpessoal .conteudoperfil { display: block; }
  }
-
 
 
 
