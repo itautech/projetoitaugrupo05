@@ -17,7 +17,9 @@ Repositório para desenvolvimento do desafio do grupo 05 do treinamento Itaú, e
 * Vanessa Gomes de Oliveira - Desenvolvedor pagina contato
 
 ## Considerações sobre segurança 
+
 - By Ângelo Beck
+
 Quando publicamos conteúdos na Internet, precisamos estar atentos aos ataques. Embora pareça estranho preocupar-se com uma simples publicação de textos, um único email inserido no conteúdo pode ser alvo para spammers.
 
 Mais cuidado ainda quando desenvolvemos ferramentas interativas, onde os "bots" tentarão submeter formulários ou mesmo hackers poderão tentar enviar mensagens indesejadas através de possíveis brechas na segurança.
