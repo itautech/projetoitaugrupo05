@@ -23,7 +23,7 @@
 }
 
 #field_content {
-	height:10em;
+	height:5em;
 }
 
 select, input {
@@ -36,8 +36,8 @@ input, select, textarea, bottom {
 	padding:0.5em;
 }
 
-input, select, label, button {
-	font-size: max(18px, 1.53vw) ;
+input, select, label, textarea, button {
+	font-size: 18px ;
 }
 
 .buttonstyle{
