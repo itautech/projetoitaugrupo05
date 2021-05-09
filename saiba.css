@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Saira Extra Condensed', sans-serif;
+}
+
+html,body{
+    height: 100%;
+}
+
+.parent{
+    display: flex;
+}
+
+.sidebar{
+    width: 17%;
+    height: 100%;
+    position: fixed;
+    background-color: blueviolet;
+
+}
+
+.sidebar-pos{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.img-sidebar{
+    position: relative;
+    text-align: center;
+    padding: 5%;
+}
+
+.img-sidebar img{
+    width: 100%;
+}
+
+.menu{
+    position: relative;
+    margin: 50px 0;
+    text-align: center;
+}
+
+.menu a{
+    position: relative;
+    color: white;
+    opacity: 0.4;
+    font-size: 25px;
+    display: block;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+.menu a.selected{
+    opacity: 1;
+}
+.content{
+    position: absolute;
+    left: 17%;
+    width: 83%;
+    height: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    background:rgb(231, 215, 231);
+    overflow:auto;
+    padding: 0 3%;
+
+}
+
+/* Saiba mais CSS */
+
+section.descricao h2 > span{
+    color: rgb(119, 18, 170);
+    font-size: 55px;
+    margin-bottom: 30%;
+    margin-top: 10%;
+    text-align: center;  
+     
+}
+
+#saibaMais{
+    font-family:  'Saira Extra Condensed', sans-serif;
+    display: flex;
+    justify-content:center;  
+    text-shadow: gray 50px 165px 50px;
+    margin-top: 20px;
+     
+}
+
+#news01{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    width: 25%;
+}
+
+.imagemNoticia{
+    box-shadow: gray 3px 3px 6px;
+    justify-content: space-between;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    padding-top: 20px;
+    padding-right: 10px;
+    padding-left: 20px;
+}
+
+h2{
+    text-align: center; 
+    font-size: 55px; 
+    color: rgb(111, 18, 161);
+    margin-top: 5%; 
+    border-right: 2px solid rgb(47, 3, 70);   
+}
+
+h4{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    
+}
+/* -Animação sugerida pelo integrante Paulo Ricardo, piscar cursor e escrevar Saiba mais como se estivesse digitando INICIO*/  
+
+.typing-animation{
+    animation: blinkCursor 500ms infinite normal, typing 4s steps(40) 1s normal;
+}
+
+@keyframes typing{
+    from{
+      width: 0;
+    }
+    to{
+        width: 18em;
+    }
+}
+
+@keyframes blinkCursor{
+    from{
+        border-right-color: rgb(47, 3, 70);
+    }
+    to{
+        border-right-color: transparent;
+    }
+}
+.line{
+    border-right:2px solid, rgb(47, 3, 70);
+    margin-top: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+/* -Animação sugerida pelo integrante Paulo Ricardo, piscar cursor e escrevar Saiba mais como se estivesse digitando FINAL*/  
+
+
+#buttonstyle{
+    background: rgb(47, 3, 70);
+    border-radius: 6px;
+    padding: 15px;
+    cursor: pointer;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+
