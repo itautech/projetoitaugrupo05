@@ -4,7 +4,7 @@
 	grid-row-gap:0.5em;
 }
 
-@media (min-width:400px) {
+@media (min-width:600px) {
 	#form {
 		grid-template-columns:1fr 3fr;
 	}
@@ -36,15 +36,19 @@ input, select, textarea, bottom {
 	padding:0.5em;
 }
 
+input, select, label, button {
+	font-size: max(18px, 1.53vw) ;
+}
+
 .buttonstyle{
     background: rgb(47, 3, 70);
     border-radius: 6px;
-    padding: 15px;
+    padding: 7px;
     cursor: pointer;
     color: #fff;
     border: none;
-    font-size: 16px;
-    display: block;
+    width: 100%;
+	display: block;
     margin-left: auto;
     margin-right: auto; 
 }
