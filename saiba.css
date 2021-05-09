@@ -72,7 +72,6 @@ html,body{
 
 section.descricao h2 > span{
     color: rgb(119, 18, 170);
-    font-size: 55px;
     margin-bottom: 30%;
     margin-top: 10%;
     text-align: center;  
@@ -112,11 +111,14 @@ section.descricao h2 > span{
 }
 
 h2{
-    text-align: center; 
-    font-size: 55px; 
+    text-align: center;
     color: rgb(111, 18, 161);
     margin-top: 5%; 
     border-right: 2px solid rgb(47, 3, 70);   
+}
+h2 {
+    
+    font-size: max(28px, 2.82vw) ;
 }
 
 h4{
@@ -165,7 +167,6 @@ h4{
     cursor: pointer;
     color: #fff;
     border: none;
-    font-size: 16px;
     display: block;
     margin-left: auto;
     margin-right: auto; 
